@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		 .row:after {content: ""; display: table; clear: both;};
+		 input[type=submit]:hover {background-color:darkorchid;}
+	</style>
+</head>
+
+<body style="box-sizing: border-box;background-image: url('gift.jpg');background-repeat: no-repeat;background-attachment: fixed;background-size: 100% 100%;">
+
+  <div style="box-sizing: border-box; float:left; position: fixed; padding-left: 2%; top:48%; font-size: 3vw;" class="head">
+    <img src="icon.jpg" alt="gift" style="width:2.5vw; height:2.5vw;">
+      Free Gifts
+    <img src="icon.jpg" alt="gift" style="width:2.5vw; height:2.5vw;">
+  </div>
+
+
+  <div style="box-sizing: border-box; border-radius:1.5vw; background-color:floralwhite; width:50%; float:right; padding:2.5vw 3vw; margin: 1vw; box-shadow: 0.5vw 0.5vw orange;"> 
+
+  <form action="">
+    <div style="box-sizing: border-box;" class="row">
+      <div style="box-sizing: border-box; float: left; width: 30%; margin-top: 6px;">
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="fname">First Name</label><span style="color:red" class="required">*</span>
+      </div>
+      <div style="box-sizing: border-box;float: left; width: 70%; margin-top: 6px;">
+        <input style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px; resize: none;" type="text" id="fname" name="fname" required>
+      </div>
+    </div>
+
+    <div style="box-sizing: border-box;" class="row">
+      <div style="box-sizing: border-box; float: left; width: 30%; margin-top: 6px;">
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="mname">Middle Name</label>
+      </div>
+      <div style="box-sizing: border-box;float: left; width: 70%; margin-top: 6px;">
+        <input style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px; resize: none;" type="text" id="mname" name="mname">
+      </div>
+    </div>
+
+    <div  style="box-sizing: border-box;" class="row">
+      <div  style="box-sizing: border-box; float: left; width: 30%; margin-top: 6px;">
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="lname">Last Name</label><span style="color:red" class="required">*</span>
+      </div>
+      <div  style="box-sizing: border-box; float: left; width: 70%; margin-top: 6px;">
+        <input style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px; resize: none;" type="text" id="lname" name="lname" required>
+      </div>
+    </div>
+
+    <div  style="box-sizing: border-box;" class="row">
+      <div  style="box-sizing: border-box; float: left; width: 30%; margin-top: 6px;">
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="email">Email id</label><span style="color:red" class="required">*</span>
+      </div>
+      <div  style="box-sizing: border-box;float: left; width: 70%; margin-top: 6px;">
+        <input style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px; resize: none;" type="text" id="email" name="email" pattern=".+@gmail.com" required>
+      </div>
+    </div>
+
+    <div  style="box-sizing: border-box;" class="row">
+      <div  style="box-sizing: border-box; float: left; width: 30%; margin-top: 6px;">
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="password">Create a password</label><span style="color:red" class="required">*</span>
+      </div>
+      <div  style="box-sizing: border-box;float: left; width: 70%; margin-top: 6px;">
+        <input style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px; resize: none;" type="password" id="pass" name="pass" required>
+      </div>
+    </div>
+
+    <div  style="box-sizing: border-box;" class="row">
+      <div  style="box-sizing: border-box; float: left; width: 30%; margin-top: 6px;">
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="password">Confirm password</label><span style="color:red" class="required">*</span>
+      </div>
+      <div  style="box-sizing: border-box;float: left; width: 70%; margin-top: 6px;">
+        <input style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px; resize: none;" type="password" id="cnfpass" name="cnfpass" required>
+      </div>
+    </div>
+
+    <div  style="box-sizing: border-box;" class="row">
+      <div  style="box-sizing: border-box; float: left; width: 30%; margin-top: 6px;">
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="gender">Gender</label><span style="color:red" class="required">*</span>
+      </div>
+      <div  style="box-sizing: border-box; float: left; width: 70%; margin-top: 6px;">
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="other">Other</label>
+      </div>
+    </div>
+
+    <div  style="box-sizing: border-box;" class="row">
+      <div  style="box-sizing: border-box; float: left; width: 30%; margin-top: 6px;">
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="phno">Phone No.</label><span style="color: red;" class="required">*</span>
+      </div>
+      <div  style="box-sizing: border-box; float: left; width: 70%; margin-top: 6px;">
+        <input style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px; resize: none;" type="tel" id="alph" name="phno" placeholder="+91 XXXXXXXXXX"; pattern="[+91 ]{4}[0-9]{10}" required>
+      </div>
+    </div>
+
+    <div  style="box-sizing: border-box;" class="row">
+      <div  style="box-sizing: border-box; float: left; width: 30%; margin-top: 6px;">
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="alph">Alt. Phone No.</label>
+      </div>
+      <div  style="box-sizing: border-box;float: left; width: 70%; margin-top: 6px;">
+        <input style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px; resize: none;" type="tel" id="alph" name="alph" placeholder="+91 XXXXXXXXXX"; pattern="[+91 ]{4}[0-9]{10}">
+      </div>
+    </div>
+
+    <div  style="box-sizing: border-box;" class="row">
+      <div  style="box-sizing: border-box; float: left; width: 30%; margin-top: 6px;">
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="curr">Current Address</label><span style="color:red" class="required">*</span>
+      </div>
+      <div  style="box-sizing: border-box;float: left; width: 70%; margin-top: 6px;">
+        <textarea style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px; resize: none;" id="curr" name="curr" rows=2 required></textarea>
+      </div>
+    </div>
+
+    <div  style="box-sizing: border-box;" class="row">
+      <div  style="box-sizing: border-box; float: left; width: 30%; margin-top: 6px;">
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="perm">Permanant Address</label>
+      </div>
+      <div  style="box-sizing: border-box; float: left; width: 70%; margin-top: 6px;">
+        <textarea style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px; resize: none;" id="perm" name="perm" rows=2></textarea>
+      </div>
+    </div>
+
+    <div  style="box-sizing: border-box;" class="row">
+      <div  style="box-sizing: border-box; float: left; width: 30%; margin-top: 6px;">
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="city">City</label><span style="color:red" class="required">*</span>
+      </div>
+      <div  style="box-sizing: border-box; float: left; width: 70%; margin-top: 6px;">
+        <input style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px; resize: none;" type="text" id="city" name="city" required>
+      </div>
+    </div>
+
+    <div  style="box-sizing: border-box;" class="row">
+      <div  style="box-sizing: border-box; float: left; width: 30%; margin-top: 6px;">
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="state">State</label><span style="color:red" class="required">*</span>
+      </div>
+      <div  style="box-sizing: border-box;float: left; width: 70%; margin-top: 6px;">
+        <select style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px; resize: none;" id="state" name="state" required>
+          <option value="">--Select one--</option><option value="MH">Maharashtra</option><option value="WB">West Bengal</option>
+          <option value="TN">Tamilnadu</option><option value="Goa">Goa</option><option value="AP-TS">AP-TS</option>
+          <option value="CFN">California</option><option value="TS">Texas</option><option value="FLR">Florida</option>
+          <option value="DC">Washington</option><option value="SCT">Scotland</option><option value="YS">Yorkshire</option>
+          <option value="SD">Shandong</option><option value="JS">Jiangsu</option><option value="TK">Tohoku</option>
+          <option value="SK">Shikoku</option><option value="BR">Berry</option><option value="CG">Champagne</option>
+          <option value="VIC">Victoria</option><option value="NSW">New South Wales</option><option value="QL">Queensland</option>
+          <option value="TM">Tasmania</option><option value="NZ">New Zealand</option><option value="ZW">Zimbabwe</option>
+        </select>
+      </div>
+    </div>
+
+    <div  style="box-sizing: border-box;" class="row">
+      <div  style="box-sizing: border-box; float: left; width: 30%; margin-top: 6px;">
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="country">Country</label><span style="color:red" class="required">*</span>
+      </div>
+      <div  style="box-sizing: border-box; float: left; width: 70%; margin-top: 6px;">
+        <select style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px; resize: none;" id="country" name="country" required>
+          <option value="">--Select one--</option><option value="IN">India</option>
+          <option value="US">U.S</option><option value="UK">U.K</option>
+          <option value="CN">China</option><option value="JPN">Japan</option>
+          <option value="FRC">France</option><option value="USSR">Russia</option>    
+        </select>
+      </div>
+    </div>
+
+    <div  style="box-sizing: border-box;" class="row">
+      <div  style="box-sizing: border-box; float: left; width: 30%; margin-top: 6px;">
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="zip">Zip code</label>
+      </div>
+      <div  style="box-sizing: border-box;float: left; width: 70%; margin-top: 6px;">
+        <input style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px; resize: none;" type="number" name="zip">
+      </div>
+    </div>
+
+    <div  style="box-sizing: border-box;" class="row">
+      <div  style="box-sizing: border-box; float: left; width: 30%; margin-top: 6px;">
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="subscribe">Subscribe newsletter</label>
+      </div>
+      <div  style="box-sizing: border-box;float: left; width: 70%; margin-top: 6px;">
+        <input type="radio" id="yes" name="subscribe" value="Yes" checked>
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="yes">Yes</label>
+        <input type="radio" id="no" name="subscribe" value="No">
+        <label style="padding: 5px 3px 12px 0; display: inline-block;" for="no">No</label>
+      </div>
+    </div>
+    <div  style="box-sizing: border-box;" class="row">
+      <input type="submit" value="Submit" style="background-color:#c654fe; color: white; font-weight: bold; padding: 8px 10px; border-radius: 20px; cursor: pointer; float: right;">
+    </div>
+
+  </form>
+</div>
+
+</body>
+</html>
